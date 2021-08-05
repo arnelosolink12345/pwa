@@ -8,9 +8,9 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Osolink Solution Is The Best</h1>
+    <p>Osolink Solution - Gatsby PWA To APK</p>
+    <p>This is a test message.....</p>
     <StaticImage
       src="../images/gatsby-astronaut.png"
       width={300}
