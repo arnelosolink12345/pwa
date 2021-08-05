@@ -17,17 +17,41 @@ const IndexPage = ({ data }) => {
         <p>Osolink Solution - Gatsby PWA To APK</p>
         <p>This is a test message.....</p>
         <h1>This is the Data that has been pulled from wordpress websites!</h1>
-        <h4> {
+
+        <h4>PWA PAGES LINKS </h4>
+        {
         data.allWpPage.edges.map(node => (
-   
-            <li key={node.node.title}> 
-              <Link to={"http://wordpress.oso-link.com"+node.node.link}>
-              {node.node.title}  <br/>
-              </Link>
-            </li>
-         
+
+          <>
+            
+              <p key={node.node.title}> 
+
+                <Link to={'/',node.node.link}>
+                {node.node.title}  <br/>
+                </Link>
+              </p>
+
+                
+          </>
         ))
-      }</h4>
+       }
+
+
+    <h4>Wordpress PAGES LINKS </h4>
+            {
+            data.allWpPage.edges.map(node => (
+
+              <>
+                
+                  <p key={node.node.title}> 
+
+                   <a href={'http://wordpress.oso-link.com/'+node.node.link}>{node.node.title} </a>
+                  </p>
+
+                    
+              </>
+            ))
+          }
         <StaticImage
           src="../images/oso.png"
           width={300}
