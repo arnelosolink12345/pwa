@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
         ))
       }</h4>
         <StaticImage
-          src="../images/download.png"
+          src="../images/oso.png"
           width={300}
           quality={95}
           formats={["AUTO", "WEBP", "AVIF"]}
