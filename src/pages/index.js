@@ -37,21 +37,6 @@ const IndexPage = ({ data }) => {
        }
 
 
-    <h4>Wordpress PAGES LINKS </h4>
-            {
-            data.allWpPage.edges.map(node => (
-
-              <>
-                
-                  <p key={node.node.title}> 
-
-                   <a href={'http://wordpress.oso-link.com/'+node.node.link}>{node.node.title} </a>
-                  </p>
-
-                    
-              </>
-            ))
-          }
         <StaticImage
           src="../images/oso.png"
           width={300}
